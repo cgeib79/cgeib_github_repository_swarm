@@ -14,10 +14,12 @@ React.Component {
   }
 
   componentDidMount(){
+    console.log("component did mount")
     const url = 'https://api.github.com/repositories'
     fetch(url)
     .then((res) => res.json())
     .then((repositories) => {
+      // console.log('repositories?', repositories);
       this.setState({repositories: repositories});
     })
   }

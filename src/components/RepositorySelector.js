@@ -6,9 +6,9 @@ const RepositorySelector = (props) => {
     props.onRepositorySelected(event.target.value)
   }
 
-  if(!props.teams) return null;
+  if(!props.repositories) return null;
 
-  const options = props.teams.map((repository, index) => {
+  const options = props.repositories.map((repository, index) => {
     return <option class="return" key={index} value={index}>
       {repository.full_name}
     </option>
