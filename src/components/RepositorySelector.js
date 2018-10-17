@@ -9,13 +9,13 @@ const RepositorySelector = (props) => {
   if(!props.repositories) return null;
 
   const options = props.repositories.map((repository, index) => {
-    return <option class="return" key={index} value={index}>
+    return <option className="return" key={index} value={index}>
       {repository.full_name}
     </option>
   })
 
   return (
-    <select class="centered" id="repository-selector" defaultValue="default" onChange={handleChange}>
+    <select className="centered" id="repository-selector" defaultValue="default" onChange={handleChange}>
       <option disabled value="default">Choose a repository...</option>
       {options}
     </select>
