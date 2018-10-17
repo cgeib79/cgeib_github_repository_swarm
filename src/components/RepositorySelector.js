@@ -1,6 +1,7 @@
 import React from 'react';
 
-const RepositorySelector = () => {
+const RepositorySelector = (props) => {
+
   function handleChange(event){
     props.onRepositorySelected(event.target.value)
   }
@@ -9,9 +10,17 @@ const RepositorySelector = () => {
 
   const options = props.teams.map((repository, index) => {
     return <option class="return" key={index} value={index}>
-      {repository.name}
+      {repository.full_name}
     </option>
   })
+
+  return (
+    <select id="repository-selector" defaultValue="default" onChange={handleChange}>
+      <option disabled value="default">Choose a repository...</option>
+      {options}
+    </select>
+  )
+
 }
 
 export default RepositorySelector;
