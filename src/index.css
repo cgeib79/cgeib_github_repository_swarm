@@ -25,12 +25,65 @@ h1 {
   font-family: 'Special Elite', cursive;
 }
 
-select.centered{
-  margin-left: 50%;
-  margin-right: 50%;
+/*styles dropdown menu:*/
+  .custom-select {
+  background-color: #FF8C00;
+  height: 4.5em;
+  width: 20em;
+  font-size: 1em;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  border-radius: 4px;
 }
 
-option.return{
-  margin-left: 50%;
-  margin-right: 50%;
+.custom-select select {
+display: none;
+background-color: #FF8C00;
+}
+
+.select-selected {
+  background-color: #FF8C00
+;
+}
+
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+  background-color: #FF8C00;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  background-color: #FF8C00;
+}
+
+.select-items {
+  position: absolute;
+  background-color: #FF8C00;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.select-hide {
+  display: none;
+}
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }

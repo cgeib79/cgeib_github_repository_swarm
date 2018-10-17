@@ -15,7 +15,7 @@ const RepositorySelector = (props) => {
   })
 
   return (
-    <select className="centered" id="repository-selector" defaultValue="default" onChange={handleChange}>
+    <select className="custom-select" defaultValue="default" onChange={handleChange}>
       <option disabled value="default">Choose a repository...</option>
       {options}
     </select>
