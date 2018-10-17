@@ -15,12 +15,12 @@ const RepositorySelector = (props) => {
   })
 
   return (
-    <select id="repository-selector" defaultValue="default" onChange={handleChange}>
+    <select class="centered" id="repository-selector" defaultValue="default" onChange={handleChange}>
       <option disabled value="default">Choose a repository...</option>
       {options}
     </select>
-  )
 
+  )
 }
 
 export default RepositorySelector;

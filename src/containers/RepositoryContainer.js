@@ -7,7 +7,7 @@ React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      reposories:[],
+      repositories:[],
       currentRepository: null
     };
     this.handleRepositorySelected = this.handleRepositorySelected.bind(this);

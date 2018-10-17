@@ -6,9 +6,31 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #FF8C00;
+  text-align: center;
+  background-image: url("clyde.jpg") ;
+  background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  font-size: 4em;
+  font-family: 'Special Elite', cursive;
+}
+
+select.centered{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+
+option.return{
+  margin-left: 50%;
+  margin-right: 50%;
 }
